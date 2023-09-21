@@ -26,7 +26,7 @@ std::uint8_t __fastcall packet_write_hook(const void *const item, const void *co
  
     const auto data = *reinterpret_cast<std::uint8_t **>(network_stream + 0x8);
  
-    std::printf("[erm] sending item: %X (item: 0x%p, networkstream: 0x%p)\n", data[1], item, network_stream);
+    std::printf("[aegians] sending item: %X (item: 0x%p, networkstream: 0x%p)\n", data[1], item, network_stream);
  
     return status;
 }
