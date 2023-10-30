@@ -1,5 +1,15 @@
 # Roblox Outgoing packet-hook
 
+
+
+
+
+```markdown
+# this is mainly for my own usage and purposes 
+```
+
+
+
 I hope to elaborate upon the internals of networking of Roblox. Many things can be achieved by the intercepting Roblox packets. Roblox inherits each packet from and item class.
 Furthermore, each packet type overrides the virtual function that writes the data for the respective packet to the bitstream.
 In my outgoing packet logger, I place an int3 (interrupt3) breakpoint at the instruction that reads the write function from the virtual function table of the packet.
